@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CodeQuest</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="home-screen">
+
+        <div class="jungle-decoration">🌴 🌿 🌴 🌿 🌴</div>
+
+        <h1>CODEQUEST</h1>
+
+        <p class="subtitle">AN 8-BIT CODING ADVENTURE</p>
+
+        <button id="startButton">▶️ START GAME</button>
+
+        <div class="jungle-decoration">🌿 🌴 🌿 🌴 🌿</div>
+
+        <div class="parrot">🦜</div>
+
+    </main>
+<!-- LANGUAGE SELECTION SCREEN -->
+<section id="languageScreen" class="language-screen" hidden>
+    <div class="jungle-decoration">🌴 🌿 🌴 🌿 🌴</div>
+    <h2>WELCOME, CODER!</h2>
+    <p class="subtitle">CHOOSE YOUR CODING ADVENTURE</p>
+
+    <div class="language-cards">
+        <button class="language-card python-card" data-language="Python">
+            <span class="language-icon">🐍</span>
+            <span class="language-title">PYTHON WORLD</span>
+            <span class="language-description">Explore the jungle!</span>
+            <span class="card-action">▶ SELECT WORLD</span>
+        </button>
+
+        <button class="language-card c-card" data-language="C">
+            <span class="language-icon">💻</span>
+            <span class="language-title">C WORLD</span>
+            <span class="language-description">Explore the ancient ruins!</span>
+            <span class="card-action">▶ SELECT WORLD</span>
+        </button>
+
+        <button class="language-card cpp-card" data-language="CPP">
+            <span class="language-icon">⚔️</span>
+            <span class="language-title">C++ WORLD</span>
+            <span class="language-description">Conquer the emerald citadel!</span>
+            <span class="card-action">▶ SELECT WORLD</span>
+        </button>
+
+        <button class="language-card java-card" data-language="Java">
+            <span class="language-icon">☕</span>
+            <span class="language-title">JAVA WORLD</span>
+            <span class="language-description">Voyage to the island of objects!</span>
+            <span class="card-action">▶ SELECT WORLD</span>
+        </button>
+    </div>
+
+    <button id="backButton" class="back-button">◀ BACK</button>
+</section>
+
+<!-- PYTHON WORLD (10 LEVELS) -->
+<section id="pythonScreen" class="world-screen" hidden>
+    <div class="jungle-decoration">🌿 🌴 🌿 🌴 🌿</div>
+    <h2>🐍 PYTHON WORLD</h2>
+    <p class="subtitle">YOUR CODING ADVENTURE BEGINS!</p>
+
+    <div class="world-card">
+        <h3>🌱 LEVEL 1: CODING CAMP</h3>
+        <p>Learn the basics of Python output!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="Python" data-level="1">▶ START LEVEL 1</button>
+    </div>
+    <div class="world-card">
+        <h3>🌿 LEVEL 2: VARIABLE VALLEY</h3>
+        <p>Store data inside Python variables!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="Python" data-level="2">▶ START LEVEL 2</button>
+    </div>
+    <div class="world-card">
+        <h3>🦜 LEVEL 3: ECHO CANYON</h3>
+        <p>Take user input with input()!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="Python" data-level="3">▶ START LEVEL 3</button>
+    </div>
+    <div class="world-card">
+        <h3>🧮 LEVEL 4: OPERATOR OASIS</h3>
+        <p>Perform calculations and math in Python!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="Python" data-level="4">▶ START LEVEL 4</button>
+    </div>
+    <div class="world-card">
+        <h3>🔀 LEVEL 5: DECISION CROSSROADS</h3>
+        <p>Make choices using if and else statements!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="Python" data-level="5">▶ START LEVEL 5</button>
+    </div>
+    <div class="world-card">
+        <h3>🧭 LEVEL 6: MULTI-PATH JUNGLE</h3>
+        <p>Handle multiple conditions using elif!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="Python" data-level="6">▶ START LEVEL 6</button>
+    </div>
+    <div class="world-card">
+        <h3>🔄 LEVEL 7: WHILE WATERFALL</h3>
+        <p>Repeat actions while a condition is true!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="Python" data-level="7">▶ START LEVEL 7</button>
+    </div>
+    <div class="world-card">
+        <h3>🔁 LEVEL 8: FOR-LOOP FOREST</h3>
+        <p>Iterate over sequences with for loops!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="Python" data-level="8">▶ START LEVEL 8</button>
+    </div>
+    <div class="world-card">
+        <h3>🎒 LEVEL 9: LIST LAGOON</h3>
+        <p>Store multiple items inside a Python list!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="Python" data-level="9">▶ START LEVEL 9</button>
+    </div>
+    <div class="world-card">
+        <h3>👑 LEVEL 10: FUNCTION FORTRESS</h3>
+        <p>Create reusable code blocks with def!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="Python" data-level="10">▶ START LEVEL 10</button>
+    </div>
+
+    <button type="button" class="back-button world-back">◀ BACK TO WORLDS</button>
+</section>
+
+<!-- C WORLD (10 LEVELS) -->
+<section id="cScreen" class="world-screen" hidden>
+    <div class="jungle-decoration">🌿 🪨 🌴 🪨 🌿</div>
+    <h2>💻 C WORLD</h2>
+    <p class="subtitle">EXPLORE THE ANCIENT RUINS!</p>
+
+    <div class="world-card">
+        <h3>🏕️ LEVEL 1: CODING CAMP</h3>
+        <p>Learn the basics of C programming output!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="C" data-level="1">▶ START LEVEL 1</button>
+    </div>
+    <div class="world-card">
+        <h3>🪨 LEVEL 2: TEMPLE OF VARIABLES</h3>
+        <p>Declare typed variables in C!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="C" data-level="2">▶ START LEVEL 2</button>
+    </div>
+    <div class="world-card">
+        <h3>🏛️ LEVEL 3: CHAMBER OF INPUT</h3>
+        <p>Read user input using scanf()!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="C" data-level="3">▶ START LEVEL 3</button>
+    </div>
+    <div class="world-card">
+        <h3>⚙️ LEVEL 4: ARITHMETIC ALTAR</h3>
+        <p>Use math and increment operators in C!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="C" data-level="4">▶ START LEVEL 4</button>
+    </div>
+    <div class="world-card">
+        <h3>⚖️ LEVEL 5: GATE OF CONDITIONS</h3>
+        <p>Control program flow with if and else!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="C" data-level="5">▶ START LEVEL 5</button>
+    </div>
+    <div class="world-card">
+        <h3>🗝️ LEVEL 6: HALL OF BRANCHES</h3>
+        <p>Chain multiple conditions with else if!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="C" data-level="6">▶ START LEVEL 6</button>
+    </div>
+    <div class="world-card">
+        <h3>🌀 LEVEL 7: WHILE LABYRINTH</h3>
+        <p>Run loops while a condition holds true!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="C" data-level="7">▶ START LEVEL 7</button>
+    </div>
+    <div class="world-card">
+        <h3>⏳ LEVEL 8: FOR-LOOP SANCTUM</h3>
+        <p>Master counter-controlled for loops in C!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="C" data-level="8">▶ START LEVEL 8</button>
+    </div>
+    <div class="world-card">
+        <h3>🧱 LEVEL 9: ARRAY ARCHIVES</h3>
+        <p>Store fixed-size collections in C arrays!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="C" data-level="9">▶ START LEVEL 9</button>
+    </div>
+    <div class="world-card">
+        <h3>🏆 LEVEL 10: CITADEL OF FUNCTIONS</h3>
+        <p>Write modular C functions with return types!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="C" data-level="10">▶ START LEVEL 10</button>
+    </div>
+
+    <button type="button" class="back-button world-back">◀ BACK TO WORLDS</button>
+</section>
+
+<!-- C++ WORLD (10 LEVELS) -->
+<section id="cppScreen" class="world-screen" hidden>
+    <div class="jungle-decoration">🌿 ⚔️ 🌴 ⚔️ 🌿</div>
+    <h2>⚔️ C++ WORLD</h2>
+    <p class="subtitle">CONQUER THE EMERALD CITADEL!</p>
+
+    <div class="world-card">
+        <h3>🛡️ LEVEL 1: STREAM OUTPOST</h3>
+        <p>Print output using cout and stream operators!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="CPP" data-level="1">▶ START LEVEL 1</button>
+    </div>
+    <div class="world-card">
+        <h3>💎 LEVEL 2: VARIABLE VAULT</h3>
+        <p>Store numbers and std::string text in C++!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="CPP" data-level="2">▶ START LEVEL 2</button>
+    </div>
+    <div class="world-card">
+        <h3>🔮 LEVEL 3: SHRINE OF CIN</h3>
+        <p>Capture player input using std::cin!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="CPP" data-level="3">▶ START LEVEL 3</button>
+    </div>
+    <div class="world-card">
+        <h3>⚡ LEVEL 4: OPERATOR FORGE</h3>
+        <p>Boost values with compound operators (+=)!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="CPP" data-level="4">▶ START LEVEL 4</button>
+    </div>
+    <div class="world-card">
+        <h3>🗡️ LEVEL 5: GUARDIAN GATE</h3>
+        <p>Make battle decisions with C++ if and else!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="CPP" data-level="5">▶ START LEVEL 5</button>
+    </div>
+    <div class="world-card">
+        <h3>🏰 LEVEL 6: BASTION OF BRANCHES</h3>
+        <p>Evaluate multiple ranks using else if!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="CPP" data-level="6">▶ START LEVEL 6</button>
+    </div>
+    <div class="world-card">
+        <h3>🌪️ LEVEL 7: WHILE WHIRLPOOL</h3>
+        <p>Repeat C++ actions while conditions hold!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="CPP" data-level="7">▶ START LEVEL 7</button>
+    </div>
+    <div class="world-card">
+        <h3>🔥 LEVEL 8: FOR-LOOP FOUNDRY</h3>
+        <p>Iterate through quests with C++ for loops!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="CPP" data-level="8">▶ START LEVEL 8</button>
+    </div>
+    <div class="world-card">
+        <h3>🏹 LEVEL 9: VECTOR SANCTUARY</h3>
+        <p>Use dynamic C++ vectors and push_back()!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="CPP" data-level="9">▶ START LEVEL 9</button>
+    </div>
+    <div class="world-card">
+        <h3>👑 LEVEL 10: CITADEL OF CLASSES</h3>
+        <p>Build blueprints with C++ Object-Oriented classes!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="CPP" data-level="10">▶ START LEVEL 10</button>
+    </div>
+
+    <button type="button" class="back-button world-back">◀ BACK TO WORLDS</button>
+</section>
+
+<!-- JAVA WORLD (10 LEVELS) -->
+<section id="javaScreen" class="world-screen" hidden>
+    <div class="jungle-decoration">🌴 ☕ 🌿 ☕ 🌴</div>
+    <h2>☕ JAVA WORLD</h2>
+    <p class="subtitle">VOYAGE TO THE ISLAND OF OBJECTS!</p>
+
+    <div class="world-card">
+        <h3>🏝️ LEVEL 1: HARBOR OF OUTPUT</h3>
+        <p>Print lines using System.out.println()!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="Java" data-level="1">▶ START LEVEL 1</button>
+    </div>
+    <div class="world-card">
+        <h3>🌋 LEVEL 2: VARIABLE VOLCANO</h3>
+        <p>Declare String, int, and boolean types in Java!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="Java" data-level="2">▶ START LEVEL 2</button>
+    </div>
+    <div class="world-card">
+        <h3>🧭 LEVEL 3: SCANNER LAGOON</h3>
+        <p>Read keyboard input using Java's Scanner!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="Java" data-level="3">▶ START LEVEL 3</button>
+    </div>
+    <div class="world-card">
+        <h3>⚓ LEVEL 4: OPERATOR ATOLL</h3>
+        <p>Combine strings and math in Java!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="Java" data-level="4">▶ START LEVEL 4</button>
+    </div>
+    <div class="world-card">
+        <h3>🗿 LEVEL 5: TEMPLE OF LOGIC</h3>
+        <p>Branch execution using Java if / else blocks!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="Java" data-level="5">▶ START LEVEL 5</button>
+    </div>
+    <div class="world-card">
+        <h3>🌉 LEVEL 6: BRIDGE OF CHOICES</h3>
+        <p>Test multiple conditions with else if in Java!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="Java" data-level="6">▶ START LEVEL 6</button>
+    </div>
+    <div class="world-card">
+        <h3>🌊 LEVEL 7: WHILE TIDES</h3>
+        <p>Repeat Java code blocks with while loops!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="Java" data-level="7">▶ START LEVEL 7</button>
+    </div>
+    <div class="world-card">
+        <h3>🎋 LEVEL 8: FOR-LOOP GROVE</h3>
+        <p>Count iterations with Java for loops!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="Java" data-level="8">▶ START LEVEL 8</button>
+    </div>
+    <div class="world-card">
+        <h3>📦 LEVEL 9: ARRAY ARCHIPELAGO</h3>
+        <p>Store collections inside Java arrays!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="Java" data-level="9">▶ START LEVEL 9</button>
+    </div>
+    <div class="world-card">
+        <h3>🏛️ LEVEL 10: MONASTERY OF METHODS</h3>
+        <p>Create reusable methods inside Java classes!</p>
+        <p>⭐ Reward: 10 XP</p>
+        <button type="button" class="level-button" data-language="Java" data-level="10">▶ START LEVEL 10</button>
+    </div>
+
+    <button type="button" class="back-button world-back">◀ BACK TO WORLDS</button>
+</section>
+
+<!-- LESSON SCREEN -->
+<section id="lessonScreen" class="lesson-screen" hidden>
+
+    <div class="jungle-decoration">🌿 🌴 🌿 🌴 🌿</div>
+
+    <h2 id="lessonTitle">🌱 LEVEL 1: CODING CAMP</h2>
+
+    <div class="lesson-card">
+
+        <h3 id="lessonTopic">What is Programming?</h3>
+
+        <p id="lessonText">
+            Programming means giving instructions to a computer
+            so it knows what to do.
+        </p>
+
+        <div class="code-box">
+            <code id="lessonCode">print("Hello, World!")</code>
+        </div>
+
+        <p id="lessonExplanation">
+            In Python, print() is used to display something on the screen.
+        </p>
+
+        <button id="completeLessonButton" class="level-button">
+            ⭐ COMPLETE LESSON
+        </button>
+
+    </div>
+<!-- QUIZ SECTION -->
+<div id="quizBox" class="world-card quiz-box" hidden>
+
+    <h3>🧠 KNOWLEDGE CHECK</h3>
+
+    <p id="quizQuestion">
+        What is the purpose of print() in Python?
+    </p>
+
+    <div class="quiz-options">
+        <button type="button" class="quiz-option" data-answer="wrong">
+            To calculate numbers
+        </button>
+
+        <button type="button" class="quiz-option" data-answer="correct">
+            To display output
+        </button>
+
+        <button type="button" class="quiz-option" data-answer="wrong">
+            To stop the program
+        </button>
+    </div>
+    <button id="lessonBackButton" class="back-button">
+        ◀️ BACK
+    </button>
+
+</section>
+
+<!-- ACHIEVEMENT SCREEN -->
+<section id="achievementScreen" class="world-screen" hidden>
+
+    <div class="jungle-decoration">🌿 ✨ 🌴 ✨ 🌿</div>
+
+    <h2>🏆 LEVEL COMPLETE!</h2>
+
+    <div class="world-card">
+        <h3>🎖️ ACHIEVEMENT UNLOCKED</h3>
+
+        <p class="language-description">
+            CODE EXPLORER
+        </p>
+
+        <p>
+            Amazing work, coder! You completed your first lesson
+            and passed the knowledge check.
+        </p>
+
+        <h3 id="achievementXP">⭐ TOTAL XP: 0</h3>
+
+        <p>Keep exploring and become a coding master!</p>
+    </div>
+
+    <button type="button" id="achievementBackButton"
+            class="back-button">
+        ◀ RETURN TO WORLD
+    </button>
+
+</section>
+<script src="script.js"></script>
+</body>
+</html>
